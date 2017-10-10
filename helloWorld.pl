@@ -1,3 +1,4 @@
 #!/usr/bin/perl
 
-say STDERR "Hello to you too"
+say STDERR "Hello to you too". join ' ', @ARGV;
+
