@@ -1,4 +1,4 @@
 #!/usr/bin/perl
-
-say STDERR "Hello to you out there";
-
+print "I'm not sure how you can enter a name directly after you type the input file. But... type your name.  ";
+$name = <>;
+say STDERR "Hello $name";
