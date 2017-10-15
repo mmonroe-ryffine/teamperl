@@ -1,9 +1,6 @@
 #!/usr/bin/perl
 
-my $name1 = $ARGV[0];
-my $name2 = $ARGV[1];
-say STDERR "Hello $name1";
-say STDERR "Hello $name2";
-
-#use Data::Dump qw(dump);
-#
+use warnings FATAL => qw(all);
+use strict;
+my $name = $ARGV[$name];
+say STDERR "Hello $name";

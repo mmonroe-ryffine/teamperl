@@ -3,7 +3,7 @@
 # SAY VERSUS PRINT
 # Say adds a new line at the end (\n). Requires you to predeclare it - whatever that means. For now, add STDERR to do it.
 # Print just prints. You'll see the next line ppear directly after. Print appears last?? Not sure what the behavior is with placement. d s
-# print "Sup dawg.";   COMMMENTED OUT THIS LINE BECAUSE ITS APPEARANCE HALFWAY THROUGH DISRUPTS THE CODE.
+# print "Sup dawg.";   COMMMENTED OUT THIS LINE BECAUSE ITS APPEARANCE HALFWAY THROUGH DISRUPTS THE OUTPUT.
 say STDERR "Sup diggity.";
 
 # MY - DECLARE A VARIABLE
