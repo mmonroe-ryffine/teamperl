@@ -1,6 +1,8 @@
 #!/usr/bin/perl
 
-use warnings FATAL => qw(all);
 use strict;
-my $name = $ARGV[$name];
-say STDERR "Hello $name";
+use warnings FATAL => qw(all);
+my $name = $ARGV[-1];
+#say STDERR "Hello $name";
+use Data::Dump qw(dump);
+say STDERR dump([@ARGV]);
