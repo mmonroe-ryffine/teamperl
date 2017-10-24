@@ -42,4 +42,9 @@ much back to normal again - the air nice and clean and the rose bush, by the fro
 
 my $searchA = grep(/^a$/i, @A);
 my $searchThe = grep(/^the$/i, @A);
-print "There are $searchA instances of the word, 'a', and $searchThe insances of the word, 'the'.\n";
+
+if ($searchA > $searchThe) {
+  print "There are $searchA instances of the word, 'a', and $searchThe insances of the word, 'the'.\n";
+} else {
+  print "There are $searchThe instances of the word, 'the', and $searchA insances of the word, 'a'.\n";
+}
