@@ -40,6 +40,6 @@ carried smoke and ash and the residual scent of fire and burnt mountains, down c
 much back to normal again - the air nice and clean and the rose bush, by the front door, opening three fresh, red, rose scented buds.
 );
 
-my @searchA = grep(a, @A);
-print @searchA;
-}
+my $searchA = grep(/^a$/i, @A);
+my $searchThe = grep(/^the$/i, @A);
+print "There are $searchA instances of the word, 'a', and $searchThe insances of the word, 'the'.\n";
