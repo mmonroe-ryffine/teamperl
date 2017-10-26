@@ -57,7 +57,7 @@ END</code></pre>
 
 <p>but advanced editors sometimes add spaces after the final END which stops the peculiar <a href="https://en.wikipedia.org/wiki/Here_document#Perl">here document</a> construct above from putting several lines of text into a scalar variable and gives weird error messages instead. Trying to be too helpful I supplied you with alternative untested code that did not work well. This too is all too normal. It is the reason one tries to use only code that has had a lot of work on it and that work done by people you trust to do it right and fix it promptly if it is not.</p>
 
-<p>So, I suggest that you use the <a href="https://en.wikipedia.org/wiki/Here_document#Perl">here document</a> approach to start off with a scalar and then proceed with split as you aimed to do.</p>
+<p>So, I suggest that you use the <a href="https://en.wikipedia.org/wiki/Here_document#Perl">here document</a> approach to start off with a scalar and then proceed with <a href="http://perldoc.perl.org/functions/split.html">split</a> as you originally aimed to do.</p>
 
 <p>At some point you might have to use a <a href="http://perldoc.perl.org/perlsyn.html#Foreach-Loops">for</a> statement. It was my original goal to get you to do that earlier but you brilliantly side stepped the problem by unexpectedly deploying <a href="http://perldoc.perl.org/functions/grep.html">grep</a> in scalar context instead.</p>
 
