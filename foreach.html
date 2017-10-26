@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rev="made" href="mailto:root@localhost" />
+</head>
+
+<body>
+
+
+
+<p><a href="http://perldoc.perl.org/functions/split.html">split</a> is a very good idea! Writing programs you did not intend to is normal.</p>
+
+<p>Please recall that <b>$</b> is for working with scalar variable that contains just one value whereas <b>@</b> is for working with an array variable that can contain many things. The person who wrote the <a href="http://perldoc.perl.org/functions/split.html">split</a> function <a href="https://en.wikipedia.org/wiki/Larry_Wall">Larry Wall</a> wanted to provide a means of going from a scalar variable to an array variable and so wrote <a href="http://perldoc.perl.org/functions/split.html">split</a> as one way to do this.</p>
+
+<p>But you are trying to go from an array to an array and so the code in <a href="http://perldoc.perl.org/functions/split.html">split</a> cannot determine which array value you want to use. You will probably say: I want to <a href="http://perldoc.perl.org/functions/split.html">split</a> each value in the array in turn. To do that we will have to refer to each value in the array, one by one, using a temporary scalar variable so that <a href="https://en.wikipedia.org/wiki/Larry_Wall">Larry Wall</a> through his code embodied in <a href="http://perldoc.perl.org/functions/split.html">split</a> can make sense of your request.</p>
+
+<p>One way to do this is using the <a href="http://perldoc.perl.org/perlsyn.html#Foreach-Loops">for</a> statement. It looks like this:</p>
+
+<pre><code>  foreach my $a (@a) {
+
+   The code in here will be executed for each value in the array @a with
+   that value present in $a
+
+  }</code></pre>
+
+<p>Example:</p>
+
+<pre><code> require v5.16;
+ use warnings FATAL =&gt; qw(all);
+ use strict;
+ use Data::Dump qw(dump);
+
+ my @a = (1..10);
+
+ foreach my $a(@a)
+  {$a = $a * $a;
+  }
+
+ say STDERR &quot;AAAA &quot;, dump(\@a);
+
+ # AAAA [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]</code></pre>
+
+<p>The original code I gave you:</p>
+
+<pre><code> my @a = qw(
+Text
+);</code></pre>
+
+<p>was wrong. I should have put it in a scalar like this:</p>
+
+<pre><code>  my $text = &lt;&lt;END;
+Text goes here
+END</code></pre>
+
+<p>but advanced editors sometimes add spaces after the final END which stops the peculiar <a href="https://en.wikipedia.org/wiki/Here_document#Perl">here document</a> construct above from putting several lines of text into a scalar variable and gives weird error messages instead. Trying to be too helpful I supplied you with alternative untested code that did not work well. This too is all too normal. It is the reason one tries to use only code that has had a lot of work on it and that work done by people you trust to do it right and fix it promptly if it is not.</p>
+
+<p>So, I suggest that you use the <a href="https://en.wikipedia.org/wiki/Here_document#Perl">here document</a> approach to start off with a scalar and then proceed with split as you aimed to do.</p>
+
+<p>At some point you might have to use a <a href="http://perldoc.perl.org/perlsyn.html#Foreach-Loops">for</a> statement. It was my original goal to get you to do that earlier but you brilliantly side stepped the problem by unexpectedly deploying <a href="http://perldoc.perl.org/functions/grep.html">grep</a> in scalar context instead.</p>
+
+<p>So I have had to set you some more difficult tasks to try and push you back onto the desired path to 1950&#39;s imperative programming. However, perhaps you can find some ingenious way of using <a href="http://perldoc.perl.org/functions/grep.html">grep</a> instead of <a href="http://perldoc.perl.org/perlsyn.html#Foreach-Loops">for</a> to solve these problems and thus show that programming has improved over the last 70 years?</p>
+
+
+</body>
+
+</html>
+
+
