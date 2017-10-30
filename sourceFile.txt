@@ -1,0 +1,80 @@
+app TeamPerl= Learning Perl on GitHub
+  maximages = 6
+  icon      = https://avatars1.githubusercontent.com/u/7548378?v=4
+  author    = philiprbrenan
+  email     = philiprbrenan@gmail.com
+
+
+# Details of photo array1
+photo array = Array
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/array1.jpg
+
+fact array = At sign
+fact array = Square brackets
+fact array = Integer keys
+fact array = Ordered keys
+fact array = Faster than hashes
+fact array = Slower than scalars
+fact array = Count up from zero
+fact array = Count down from minus one
+fact array = Scalar gives number of elements
+fact array = Grows automatically
+fact array = Push
+fact array = Pop
+fact array = Shift
+fact array = Unshift
+
+# Details of photo array2
+photo array = Array
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/array2.png
+
+# Details of photo array3
+photo array = Array
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/array3.jpg
+
+# Details of photo array4
+photo array = Array
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/array4.jpg
+
+# Details of photo hash1
+photo hash = Hash
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/hash1.jpg
+
+fact hash = Hash sign
+fact hash = Curly brackets
+fact hash = String keys
+fact hash = Not ordered
+fact hash = Scalar keys gives number of elements
+fact hash = Slower than arrays
+fact hash = Slower than scalars
+fact hash = Grows automatically
+fact hash = Sort the keys
+fact hash = Delete
+
+# Details of photo hash2
+photo hash = Hash
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/hash2.jpg
+
+# Details of photo hash3
+photo hash = Hash
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/hash3.jpg
+
+# Details of photo hash4
+photo hash = Hash
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/hash4.jpg
+
+# Details of photo scalar1
+photo scalar = Scalar
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/scalar1.jpg
+
+fact scalar = Dollar sign
+fact scalar = Just one element at a time
+fact scalar = No brackets
+fact scalar = No keys
+fact scalar = Faster than hashes
+fact scalar = Faster than arrays
+fact scalar = Can be set to undef
+
+# Details of photo scalar2
+photo scalar = Scalar
+  url = https://raw.githubusercontent.com/philiprbrenan/TeamPerl/master/images/scalar2.jpg
