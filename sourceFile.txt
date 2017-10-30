@@ -1,4 +1,4 @@
-app TeamPerl= Learning Perl on GitHub
+app teamPerl= Learning Perl on GitHub
   maximages = 6
   icon      = https://avatars1.githubusercontent.com/u/7548378?v=4
   author    = philiprbrenan
